@@ -627,6 +627,91 @@ section { padding: 5.5rem 2rem; }
   transform: translateY(-2px);
 }
 
+/* ── EXPERIENCE BULLETS ── */
+.tl-bullets {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.tl-bullets li {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.tl-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 2px;
+}
+
+/* ── CV PRIVACY NOTE ── */
+.cv-privacy-note {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* ── ACHIEVEMENTS ── */
+.achieve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.achieve-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.achieve-card:hover {
+  border-color: var(--accent3);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.achieve-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.achieve-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.achieve-sub {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.achieve-org {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-family: 'Fira Code', monospace;
+}
+
 /* ── FOOTER ── */
 footer {
   text-align: center;
